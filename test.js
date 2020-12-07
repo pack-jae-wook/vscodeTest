@@ -1,6 +1,11 @@
-function changeH1Color() {
+function changeH1Red() {
     $("h1").css("color", "red");
 }
+
+function changeH1Blue() {
+    $("h1").css("color", "blue");
+}
 $(document).ready(function() {
-    $("button").click(changeH1Color);
+    $("button").mousedown(changeH1Red);
+    $("button").mouseup(changeH1Blue);
 });
